@@ -1,0 +1,28 @@
+{
+  "name": "North American Birds Classifier (NABirds)",
+  "version": "1.0.0",
+  "note": "This configuration requires a TFLite model trained on NABirds dataset. See README for alternatives.",
+  "model": {
+    "url": "https://example.com/nabirds_model.tflite",
+    "type": "tflite",
+    "note": "Replace this URL with your NABirds TFLite model location"
+  },
+  "labels": {
+    "url": "https://raw.githubusercontent.com/npatta01/Bird-Classifier/master/backend/models/classes.json",
+    "type": "json"
+  },
+  "input": {
+    "width": 224,
+    "height": 224,
+    "channels": 3,
+    "mean": [127.5, 127.5, 127.5],
+    "std": [127.5, 127.5, 127.5]
+  },
+  "dataset_info": {
+    "name": "NABirds V1",
+    "species": 400,
+    "categories": 700,
+    "images": 48000,
+    "region": "North America"
+  }
+}
